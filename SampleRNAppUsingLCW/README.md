@@ -23,7 +23,7 @@ It should look similar to this:
 
 ### 3. **Add** your chat widget config to `omnichannelConfig` in [ClassComponent.js](src/components/ClassComponent.js) and [FunctionalComponent.js](src/components/FunctionalComponent.js)
 
-```
+```js
 const omnichannelConfig = {
   src: '[your-src]',
   appId: '[your-app-id]',
