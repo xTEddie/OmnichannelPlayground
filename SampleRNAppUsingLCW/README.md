@@ -35,4 +35,18 @@ const omnichannelConfig = {
 
 3. Run App via `yarn run android` or `yarn run ios`
 
+## More
 
+### Use Functional Component
+Go to [App.js](src/components/App.js) and set `useFunctional` flag to `true`
+
+```js
+    const useFunctional = true;
+```
+
+### Use Class-based Component
+Go to [App.js](src/components/App.js) and set `useFunctional` flag to `false`
+
+```js
+    const useFunctional = false;
+```
