@@ -101,8 +101,8 @@ const FunctionalComponent = () => {
           Running <Text style={styles.highlight}>Omnichannel LiveChatWidget</Text>
         </Text>
         <View style={styles.buttonContainer}>
-          <Button title="start" onPress={buttonStart}/>
-          <Button title="end" color="#f194ff" onPress={buttonEnd}/>
+          <Button title="start" onPress={buttonStart} disabled={!lcwReady}/>
+          <Button title="end" color="#f194ff" onPress={buttonEnd} disabled={!lcwReady}/>
         </View>
       </View>
       <WebView

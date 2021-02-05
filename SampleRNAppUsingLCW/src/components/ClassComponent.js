@@ -115,8 +115,8 @@ class ClassComponent extends React.Component {
             Running <Text style={styles.highlight}>Omnichannel LiveChatWidget</Text>
           </Text>
           <View style={styles.buttonContainer}>
-            <Button title="start" onPress={(event) => this.buttonStart(event)}/>
-            <Button title="end" color="#f194ff" onPress={(event) => this.buttonEnd(event)}/>
+            <Button title="start" onPress={(event) => this.buttonStart(event)} disabled={!this.state.lcwReady}/>
+            <Button title="end" color="#f194ff" onPress={(event) => this.buttonEnd(event)} disabled={!this.state.lcwReady}/>
           </View>
         </View>
         <WebView
